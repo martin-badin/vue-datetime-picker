@@ -2,6 +2,9 @@
 
 ## Props
 
+```js
+```
+
 ## Example
 
 ```html
