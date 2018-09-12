@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import { DateTimePicker } from "./components";
+import DateTimePicker from "./components";
 
 export default {
   name: "app",
