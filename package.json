@@ -1,8 +1,12 @@
 {
   "name": "vue-datetime-picker",
   "version": "0.0.1",
+  "author": "Martin Badin",
   "license": "MIT",
-  "main": "src/components",
+  "main": "dist/VueDateTimePicker.umd.js",
+  "browser": {
+    "./sfc": "src/components/DateTimePicker.vue"
+  },
   "scripts": {
     "build-bundle": "vue-cli-service build --target lib --name VueDateTimePicker ./src/components/index.js",
     "build": "vue-cli-service build",
@@ -23,5 +27,13 @@
     "sass-loader": "^7.0.1",
     "vue-template-compiler": "^2.5.17",
     "vue": "^2.5.17"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martin-badin/vue-datetime-picker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/martin-badin/vue-datetime-picker/issues"
+  },
+  "homepage": "https://github.com/martin-badin/vue-datetime-picker/blob/master/README.md"
 }
