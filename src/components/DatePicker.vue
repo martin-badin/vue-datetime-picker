@@ -3,23 +3,25 @@
     <div class="datetime-picker__picker">
       <div class="datetime-picker__months datetime-picker--clearfix">
         <button @click="onPrevMonth" class="datetime-picker__button datetime-picker__button--left">◀</button>
-        <div class="datetime-picker__month">
-          {{ formated.month }} {{ formated.year }}
-        </div>
-        <button @click="onNextMonth" class="datetime-picker__button datetime-picker__button--right">▶</button>
+        <div class="datetime-picker__month">{{ formated.month }} {{ formated.year }}</div>
+        <button
+          @click="onNextMonth"
+          class="datetime-picker__button datetime-picker__button--right"
+        >▶</button>
       </div>
 
       <div class="datetime-picker__days datetime-picker--clearfix">
-        <div v-for="day in locale.days" :key="day" class="datetime-picker__day">
-          {{ day }}
-        </div>
-        <div :class="{
-          'datetime-picker__day': true,
-          'datetime-picker__day--selected': isEqual(day, value),
-          'datetime-picker__day--disabled': isWithinRange(day) === false
-        }" v-for="day in days" :key="getTimestamp(day)" @click="onSelectDay(day)">
-          {{ getDate(day) }}
-        </div>
+        <div v-for="day in locale.days" :key="day" class="datetime-picker__day">{{ day }}</div>
+        <div
+          :class="{
+            'datetime-picker__day': true,
+            'datetime-picker__day--selected': isEqual(day, value),
+            'datetime-picker__day--disabled': isWithinRange(day) === false
+          }"
+          v-for="day in days"
+          :key="getTimestamp(day)"
+          @click="onSelectDay(day)"
+        >{{ getDate(day) }}</div>
       </div>
     </div>
   </div>

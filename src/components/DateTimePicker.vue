@@ -8,7 +8,7 @@
       <time-picker :value="value" @input="$emit('input', $event)"></time-picker>
     </modal>
   </div>
-</template>
+</template> 
 
 <script>
 import Modal from "../atoms/Modal.vue";
