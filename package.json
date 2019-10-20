@@ -1,6 +1,6 @@
 {
   "name": "vue-datetime-picker",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "author": "Martin Badin",
   "license": "MIT",
   "main": "dist/VueDateTimePicker.umd.js",
